@@ -1,4 +1,4 @@
-# System setup
+# System
 
 * Install OpenSSH
 * Install GIT
@@ -37,7 +37,7 @@ git --version
 You have to install both docker and docker compose
 
 
-# Docker Environment Setup
+# Docker
 
 *REQUIREMENT: Cloned Git-Repository which includes a DockerFile and Dockercompose (.yml) file*
 
