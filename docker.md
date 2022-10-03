@@ -62,14 +62,3 @@ sudo kill [PID]                                 #e.g. sudo kill 854
 ```
 4) Close terminal
 ***
-
-## Headergsagds
-
-
-
-
-
-## dsgasgds
-
-
-## sdgdsafhgasd
