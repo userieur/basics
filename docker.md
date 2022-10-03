@@ -42,7 +42,7 @@ sudo docker-compose down                        #add --remove-orphans if you wan
 ```
 3) Next time when starting the environment, you only have to do the `docker-compose up` from setting up the environment step 3
 ***
-### Common errors & solutions
+#### Common errors & solutions
 * Ports used in dockercompose file are already occupied
 
 **Ports used in dockercompose file are already occupied**
