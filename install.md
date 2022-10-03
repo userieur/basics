@@ -22,7 +22,7 @@ sudo apt install openssh-client
 1) Download & Install [GIT](https://git-scm.com/download/win)
 2) Configure SSH keys
 
-## Using GitHub Desktop as alternative
+## Can also install GitHub Desktop
 
 ### Linux
 [Instructions](https://www.atlassian.com/git/tutorials/install-git#linux)
@@ -39,6 +39,12 @@ git --version
 ## Installing Docker
 
 You have to install both docker and docker compose
+
+## Installing VS Code
+
+First time setup 
+### Windows
+Download GIT 
 
 
 # Docker
