@@ -1,4 +1,43 @@
-## Docker
+# System setup
+
+* Install OpenSSH
+* Install GIT
+* Install Docker
+
+## Install OpenSSH
+### Windows
+1) Download & Install [OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
+
+### Linux
+*Only relevant if ssh-agent is not installed already*
+1) Download & Install [OpenSSH](https://ubuntu.com/server/docs/service-openssh)
+```
+sudo apt install openssh-client
+```
+
+## Installing GIT
+### Windows
+1) Download & Install [GIT](https://git-scm.com/download/win)
+2) Configure SSH keys
+
+### Linux
+[Instructions](https://www.atlassian.com/git/tutorials/install-git#linux)
+```
+sudo apt update
+```
+```
+sudo apt install git
+```
+Verify installation
+```
+git --version
+```
+## Installing Docker
+
+You have to install both docker and docker compose
+
+
+# Docker Environment Setup
 
 *REQUIREMENT: Cloned Git-Repository which includes a DockerFile and Dockercompose (.yml) file*
 
@@ -7,7 +46,7 @@
 * Closing the environment
 * Common errors & solutions
 
-### Setting the environment
+## Setting the environment
 1) Using a terminal, navigate to the folder which contains the Dockerfile (it should be the main folder of the repository)
 2) Build the Dockerfile with the below code snippet.
 
@@ -22,7 +61,7 @@ sudo docker build -t [name]:[version]            #e.g. canopus:1.0
 ```
 sudo docker-compose -f docker-compose.yml up     #-f flags allows for monitoring all containers in terminal
 ```
-### Using the environment
+## Using the environment
 1) Open a new terminal and enter the following commands:
 
 *These commands are made for a container running 3.10-slim (Linux)*
@@ -33,7 +72,7 @@ sudo docker exec -it [container name] /bin/bash #e.g. sudo docker exec -it canop
 ```
 cd path/path & program file.ext                 #e.g. cd app & python3 main.py
 ```
-### Closing the environment
+## Closing the environment
 1) Using the terminal which is running the docker-compose, enter `CTRL+C`. This terminates all running containers.
 2) Enter the following command:
 ```
@@ -41,10 +80,10 @@ sudo docker-compose down                        #add --remove-orphans if you wan
 ```
 3) Next time when starting the environment, you only have to do the `docker-compose up` from setting up the environment step 3
 
-### Common errors & solutions
+## Common errors & solutions
 * Ports used in dockercompose file are already occupied
 
-#### Ports used in dockercompose file are already occupied
+### Ports used in dockercompose file are already occupied
 1) Open a new terminal
 2) Identify program that is using the port
 ```
