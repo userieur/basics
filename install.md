@@ -8,6 +8,8 @@
 ### Windows
 1) Download & Install [OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
 
+*If no admin rights, skip and go to step 2*
+
 ### Linux
 *Only relevant if ssh-agent is not installed already*
 1) Download & Install [OpenSSH](https://ubuntu.com/server/docs/service-openssh)
@@ -19,6 +21,8 @@ sudo apt install openssh-client
 ### Windows
 1) Download & Install [GIT](https://git-scm.com/download/win)
 2) Configure SSH keys
+
+## Using GitHub Desktop as alternative
 
 ### Linux
 [Instructions](https://www.atlassian.com/git/tutorials/install-git#linux)
