@@ -7,7 +7,7 @@
 * Closing the environment
 * Common errors & solutions
 
-#### Setting the environment
+### Setting the environment
 1) Using a terminal, navigate to the folder which contains the Dockerfile (it should be the main folder of the repository)
 2) Build the Dockerfile with the below code snippet.
 
@@ -22,8 +22,7 @@ sudo docker build -t [name]:[version]            #e.g. canopus:1.0
 ```
 sudo docker-compose -f docker-compose.yml up     #-f flags allows for monitoring all containers in terminal
 ```
-
-#### Using the environment
+### Using the environment
 1) Open a new terminal and enter the following commands:
 
 *These commands are made for a container running 3.10-slim (Linux)*
@@ -34,18 +33,18 @@ sudo docker exec -it [container name] /bin/bash #e.g. sudo docker exec -it canop
 ```
 cd path/path & program file.ext                 #e.g. cd app & python3 main.py
 ```
-#### Closing the environment
+### Closing the environment
 1) Using the terminal which is running the docker-compose, enter `CTRL+C`. This terminates all running containers.
 2) Enter the following command:
 ```
 sudo docker-compose down                        #add --remove-orphans if you want to clean everything
 ```
 3) Next time when starting the environment, you only have to do the `docker-compose up` from setting up the environment step 3
-***
-#### Common errors & solutions
+
+### Common errors & solutions
 * Ports used in dockercompose file are already occupied
 
-**Ports used in dockercompose file are already occupied**
+#### Ports used in dockercompose file are already occupied
 1) Open a new terminal
 2) Identify program that is using the port
 ```
